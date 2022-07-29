@@ -51,7 +51,7 @@ Load it into your Nova Tools to display the Roles within your Resources
 ```php
 // app/Providers/NovaServiceProvider.php
 
-use Silvanite\NovaToolPermissions\NovaToolPermissions;
+use HabibTalib\NovaToolPermissions\NovaToolPermissions;
 
 public function tools()
     {
@@ -66,7 +66,7 @@ You can assign Users to Roles from the Role resource, however if you want to ass
 ```php
 // app/Nova/User.php
 
-use Silvanite\NovaToolPermissions\Role;
+use HabibTalib\NovaToolPermissions\Role;
 
 public function fields(Request $request)
 {
@@ -80,7 +80,7 @@ public function fields(Request $request)
 If you are not using the defaul `App\Nova\User` Resource you can customise this by publishing the `novatoolpermissions config and setting your User resource model.
 
 ```sh
-php artisan vendor:publish --provider="Silvanite\NovaToolPermissions\Providers\PackageServiceProvider"
+php artisan vendor:publish --provider="HabibTalib\NovaToolPermissions\Providers\PackageServiceProvider"
 ```
 
 Remove the default `viewNova` Gate to use the Gate included by this package. You will need to keep the gate() method in place, just empty it.

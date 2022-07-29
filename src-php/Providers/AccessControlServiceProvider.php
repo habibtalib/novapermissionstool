@@ -1,10 +1,10 @@
 <?php
 
-namespace Silvanite\NovaToolPermissions\Providers;
+namespace HabibTalib\NovaToolPermissions\Providers;
 
 use Illuminate\Support\Facades\Gate;
 use Illuminate\Support\ServiceProvider;
-use Silvanite\NovaToolPermissions\Traits\AccessControlGate;
+use HabibTalib\NovaToolPermissions\Traits\AccessControlGate;
 
 class AccessControlServiceProvider extends ServiceProvider
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Silvanite\NovaToolPermissions;
+namespace HabibTalib\NovaToolPermissions;
 
 use Laravel\Nova\Resource;
 use Laravel\Nova\Fields\ID;

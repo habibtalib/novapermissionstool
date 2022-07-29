@@ -1,6 +1,6 @@
 <?php
 
-namespace Silvanite\NovaToolPermissions\Nova;
+namespace HabibTalib\NovaToolPermissions\Nova;
 
 use Laravel\Nova\Panel;
 use Silvanite\Brandenburg\Role as RoleModel;

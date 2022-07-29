@@ -1,6 +1,6 @@
 <?php
 
-namespace Silvanite\NovaToolPermissions\Traits;
+namespace HabibTalib\NovaToolPermissions\Traits;
 
 trait AccessControlGate
 {

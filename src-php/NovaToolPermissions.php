@@ -1,10 +1,10 @@
 <?php
 
-namespace Silvanite\NovaToolPermissions;
+namespace HabibTalib\NovaToolPermissions;
 
 use Laravel\Nova\Nova;
 use Laravel\Nova\Tool;
-use Silvanite\NovaToolPermissions\Role;
+use HabibTalib\NovaToolPermissions\Role;
 use Illuminate\Http\Request;
 
 class NovaToolPermissions extends Tool
