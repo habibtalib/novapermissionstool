@@ -1,5 +1,5 @@
 {
-    "name": "silvanite/novatoolpermissions",
+    "name": "habibtalib/novatoolpermissions",
     "description": "Laravel Nova Permissions (Roles and Permission based Access Control (ACL))",
     "keywords": [
         "laravel",
@@ -17,8 +17,8 @@
     "license": "MIT",
     "authors": [
         {
-            "name": "Marco Mark",
-            "email": "m2de@outlook.com"
+            "name": "Habib Talib",
+            "email": "cyberx11@gmail.com"
         }
     ],
     "require": {

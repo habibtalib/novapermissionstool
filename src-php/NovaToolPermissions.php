@@ -5,6 +5,7 @@ namespace Silvanite\NovaToolPermissions;
 use Laravel\Nova\Nova;
 use Laravel\Nova\Tool;
 use Silvanite\NovaToolPermissions\Role;
+use Illuminate\Http\Request;
 
 class NovaToolPermissions extends Tool
 {
@@ -19,4 +20,6 @@ class NovaToolPermissions extends Tool
             Role::class,
         ]);
     }
+
+    public function menu(Request $request){}
 }

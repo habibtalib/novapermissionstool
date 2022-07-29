@@ -7,11 +7,12 @@ use Laravel\Nova\Fields\ID;
 use Illuminate\Http\Request;
 use Laravel\Nova\Fields\Text;
 use Silvanite\Brandenburg\Policy;
-use Benjaminhirsch\NovaSlugField\Slug;
+// use Benjaminhirsch\NovaSlugField\Slug;
 use Laravel\Nova\Fields\BelongsToMany;
 use Silvanite\Brandenburg\Role as RoleModel;
 use Silvanite\NovaFieldCheckboxes\Checkboxes;
-use Benjaminhirsch\NovaSlugField\TextWithSlug;
+// use Benjaminhirsch\NovaSlugField\TextWithSlug;
+use Laravel\Nova\Fields\Slug;
 
 class Role extends Resource
 {
@@ -55,9 +56,11 @@ class Role extends Resource
         return [
             ID::make()->sortable(),
 
-            TextWithSlug::make(__('Name'), 'name')->sortable()->slug('slug'),
+            // TextWithSlug::make(__('Name'), 'name')->sortable()->slug('slug'),
+            Text::make(__('Name'), 'name')->sortable(),
 
             Slug::make(__('Slug'), 'slug')
+                ->from('name')
                 ->rules('required')
                 ->creationRules('unique:roles')
                 ->updateRules('unique:roles,slug,{{resourceId}}')
